@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-15"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhika's Boutique</title>
+<link href="background1.jpg" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Montserrat',sans-serif;background:#fdf8f4;}
+.top{padding:18px 40px;background:#fff;text-align:center;font-family:'Cormorant Garamond',serif;font-size:28px;letter-spacing:4px;font-weight:700;}
+.top span{display:block;font-size:11px;letter-spacing:6px;font-weight:400;}
+.nav{display:flex;justify-content:center;gap:35px;padding:14px;background:#fff;border-top:1px solid #f0e6dc;border-bottom:1px solid #f0e6dc;}
+.nav a{cursor:pointer;color:#888;font-size:12px;letter-spacing:1.5px;text-decoration:none;padding-bottom:4px;}
+.nav a.active{color:#000;border-bottom:2px solid #b78a65;}
+.page{display:none}.page.active{display:block}
+.hero{display:flex;align-items:center;min-height:75vh;padding:30px 50px;}
+.hero-img{flex:1.2;background:url('background1.jpg') center/cover;height:650px;}
+.hero-text{flex:0.8;padding-left:70px;font-family:'Cormorant Garamond',serif;font-size:58px;color:#3e2b20;line-height:1.1;}
+.sec{padding:60px 40px;max-width:1200px;margin:auto}
+.sec h2{font-family:'Cormorant Garamond',serif;text-align:center;font-size:42px;color:#4a3728;}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:30px}
+.grid img{width:100%;height:360px;object-fit:cover;border-radius:12px}
+
+</style>
+</head>
+<body><br>
+
+
+
+       <div class="logo" style="font-size:40px; color:#593f37; font-weight:400; font-family:'Cormorant Garamond', serif; letter-spacing:2px; width:100%; text-align:center;">
+  RADHIKA'S BOUTIQUE<br>
+<br>
+
+</div>
+</div>
+<div class="nav">
+<a class="active" onclick="showPage('home',this)">HOME</a>
+<a onclick="showPage('saree',this)">SAREE</a>
+<a onclick="showPage('kurti',this)">KURTIS</a>
+<a onclick="showPage('Lehengas',this)">LEHENGAS</a>
+<a onclick="showPage('Western',this)">WESTERN</a>
+<a onclick="showPage('Bridal',this)">BRIDAL</a>
+<a onclick="showPage('Jewellery',this)">JEWELLERY</a>
+</div>
+
+<div id="home" class="page active"><div class="hero"><div class="hero-img"></div><div class="hero-text">CELEBRATE<br>EVERY OCCASION<br>WITH ETHNIC<br>GRACE🪷</div></div></div>
+
+<div id="saree" class="page"><div class="sec"><h2>Saree Collection</h2><div class="grid"><img src="saree1.jpg"><img src="saree2.jpg"><img src="saree3.jpg"><img src="saree4.jpg"></div></div></div>
+
+<div id="kurti" class="page"><div class="sec"><h2>Kurti Collection</h2><div class="grid"><img src="Kurti1.jpg"><img src="Kurti2.jpg"><img src="Kurti3.jpg"><img src="Kurti4.jpg"></div></div></div>
+
+<div id="Lehengas" class="page"><div class="sec"><h2>Lehengas Collection</h2><div class="grid"><img src="Lehenga1.jpg"><img src="Lehenga2.jpg"><img src="Lehenga3.jpg"><img src="Lehenga4.jpg"></div></div></div>
+
+<div id="Western" class="page"><div class="sec"><h2>Western Collection</h2><div class="grid"><img src="Western1.jpg"><img src="Western2.jpg"><img src="Western3.jpg"><img src="Western4.jpg"></div></div></div>
+
+<div id="Bridal" class="page"><div class="sec"><h2>Bridal Collection</h2><div class="grid"><img src="bridal1.jpg"><img src="bridal2.jpg"><img src="bridal3.jpg"><img src="bridal4.jpg"></div></div></div>
+
+<div id="Jewellery" class="page"><div class="sec"><h2>Jewellery Collection</h2><div class="grid"><img src="jewellery1.jpg"><img src="jewellery2.jpg"><img src="jewellery3.jpg"><img src="jewellery4.jpg"></div></div></div>
+
+
+
+<script>
+function showPage(id,el){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('.nav a').forEach(a=>a.classList.remove('active'));
+el.classList.add('active');
+}
+</script>
+<div class="footer" style="text-align:center;padding:50px 20px;background:white;border-top:1px solid #eee;">
+  <h2 style="font-family:'Cormorant Garamond',serif;color:#5a3e2b;font: size 27px;px;margin-bottom:15px;">About Us</h2>
+  <p style="max-width:600px;margin:0 auto 15px;font: size 16px;px;line-height:1.8;color:#666;">
+    Curated with Quality, Draped in Tradition, Made for Elegance.<br>
+    Beautiful sarees, Handpicked with Love, Made for your Everyday Grace.<br>
+                  Quality | Tradition | Elegance
+  </p>
+
+  <!-- BUTTONS -->
+  <div style="margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <!-- WhatsApp with direct message -->
+    <a href="https://wa.me/916281245051?text=Hi%2C%20Radhika%27s%20Boutique%20%F0%9F%98%8A" 
+       target="_blank"
+       style="background:#25D366;color:white;padding:12px 26px;border-radius:30px;text-decoration:none;display:inline-block;font-size:13px;font: weight 7px;700;">
+      💬 WhatsApp Us
+    </a>
+    
+    <!-- Instagram -->
+    <a href="https://instagram.com/radhikas_boutique" 
+       target="_blank"
+       style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;padding:12px 26px;border-radius:30px;text-decoration:none;display:inline-block;font-size:13px;font: weight 7px;00;">
+      📸 Instagram
+    </a>
+  </div>
+
+  <p style="margin-top:25px;font: size 20px;px;line-height:1.8;">
+    📞 +91 6281245051<br>
+    📍 Kondaparthy, Warangal, Telangana
+  </p>
+  <p style="margin-top:10px;font: size 20px;px;color:#674040;">#2026 Radhika's Boutique</p>
+</div>
+
+    </a>
+  
+</div>
+
+
+
+</body>
+</html>
